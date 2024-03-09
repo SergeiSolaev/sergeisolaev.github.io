@@ -134,6 +134,10 @@ a {
     color: #FFFFFF;
 }
 
+.products {
+    padding-bottom: 85px;
+}
+
 .products_title {
     font-size: 30px;
     font-weight: 400;
