@@ -724,13 +724,6 @@ a {
   padding-top: 96px;
   padding-bottom: 128px;
 }
-.shopping-cart__head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #F8F3F4;
-  height: 148px;
-}
 .shopping-cart__title {
   color: #F16D7F;
   font-size: 24px;
@@ -828,6 +821,7 @@ a {
 }
 .shopping-cart__form__input-field {
   box-sizing: border-box;
+  border: 1px solid rgb(164, 164, 164);
   padding-left: 16px;
   padding-right: 16pc;
   width: 100%;
@@ -945,6 +939,143 @@ a {
   background-color: #F16D7F;
   cursor: pointer;
   transition: 0.3s;
+}
+
+.registration {
+  display: flex;
+  justify-content: space-between;
+  gap: 22px;
+  padding-top: 64px;
+  padding-bottom: 96px;
+}
+.registration__heading {
+  padding-bottom: 20px;
+  color: rgb(34, 34, 34);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.registration__form {
+  width: 360px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.registration__input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.registration__input {
+  width: 360px;
+  box-sizing: border-box;
+  border: 1px solid rgb(164, 164, 164);
+  padding-left: 16px;
+  padding-right: 16px;
+  height: 45px;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: left;
+  outline: none;
+}
+.registration__input::-moz-placeholder {
+  color: rgb(177, 177, 177);
+}
+.registration__input::placeholder {
+  color: rgb(177, 177, 177);
+}
+.registration__radiobox {
+  padding-top: 31px;
+  padding-bottom: 33px;
+  display: flex;
+}
+.registration__label {
+  padding-left: 10px;
+  padding-right: 20px;
+  color: rgb(0, 0, 0);
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 13px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.registration__hint {
+  padding-top: 15px;
+  color: rgb(177, 177, 177);
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.registration__button {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  width: 180px;
+  text-align: left;
+  margin-top: 39px;
+  padding: 15px 29px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0%;
+  background-color: #FFFFFF;
+  color: #4A4A4A;
+  border: 1px solid rgb(164, 164, 164);
+  transition: 0.3s;
+}
+.registration__button:hover {
+  color: #FFFFFF;
+  background-color: #F16D7F;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.registration__button:hover path {
+  fill: #FFFFFF;
+  transition: 0.3s;
+}
+.registration__button path {
+  transition: 0.3s;
+}
+.registration__perks {
+  width: 652px;
+}
+.registration__perks-heading {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.registration__perks-info {
+  padding-top: 21px;
+  padding-bottom: 21px;
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.registration__perks-ul {
+  list-style: none;
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.registration__perks-li {
+  display: flex;
+  gap: 21px;
+  align-items: center;
 }
 
 @media (max-width: 1024px) {

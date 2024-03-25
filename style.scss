@@ -405,7 +405,8 @@ a {
         line-height: 19px;
         letter-spacing: 0%;
         color: #C4C4C4;
-        &:hover{
+
+        &:hover {
             color: $colorSelectSite;
         }
     }
@@ -813,14 +814,6 @@ a {
     padding-top: 96px;
     padding-bottom: 128px;
 
-    &__head {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #F8F3F4;
-        height: 148px;
-    }
-
     &__title {
         color: $colorSelectSite;
         font-size: 24px;
@@ -863,7 +856,8 @@ a {
         line-height: 29px;
         letter-spacing: 0%;
         text-align: left;
-        &:hover{
+
+        &:hover {
             text-decoration: underline;
         }
     }
@@ -911,7 +905,8 @@ a {
         position: absolute;
         top: 28px;
         right: 22px;
-        &:hover path{
+
+        &:hover path {
             fill: $colorSelectSite;
         }
     }
@@ -937,6 +932,7 @@ a {
 
     &__form__input-field {
         box-sizing: border-box;
+        border: 1px solid rgb(164, 164, 164);
         padding-left: 16px;
         padding-right: 16pc;
         width: 100%;
@@ -947,6 +943,7 @@ a {
         letter-spacing: 0%;
         text-align: left;
         outline: none;
+
         &::placeholder {
             color: rgb(177, 177, 177);
         }
@@ -1067,6 +1064,159 @@ a {
         transition: $transitionTime;
     }
 
+}
+
+.registration {
+    display: flex;
+    justify-content: space-between;
+    gap: 22px;
+    padding-top: 64px;
+    padding-bottom: 96px;
+
+    &__heading {
+        padding-bottom: 20px;
+        color: rgb(34, 34, 34);
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+    &__form {
+        width: 360px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__input-box {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__input {
+        width: 360px;
+        box-sizing: border-box;
+        border: 1px solid rgb(164, 164, 164);
+
+        padding-left: 16px;
+        padding-right: 16px;
+        height: 45px;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 16px;
+        letter-spacing: 0%;
+        text-align: left;
+        outline: none;
+
+        &::placeholder {
+            color: rgb(177, 177, 177);
+        }
+    }
+
+    &__radiobox {
+        padding-top: 31px;
+        padding-bottom: 33px;
+        display: flex;
+    }
+
+    &__label {
+        padding-left: 10px;
+        padding-right: 20px;
+        color: rgb(0, 0, 0);
+        font-size: 11px;
+        font-weight: 300;
+        line-height: 13px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+    &__hint {
+        padding-top: 15px;
+        color: rgb(177, 177, 177);
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 16px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+    &__button {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        width: 180px;
+        text-align: left;
+        margin-top: 39px;
+        padding: 15px 29px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0%;
+        background-color: #FFFFFF;
+        color: #4A4A4A;
+        border: 1px solid rgb(164, 164, 164);
+        transition: $transitionTime;
+        ;
+    }
+
+    &__button:hover{
+        color: #FFFFFF;
+        background-color: $colorSelectSite;
+        cursor: pointer;
+        transition: $transitionTime;
+    }
+
+    &__button:hover path{
+        fill: #FFFFFF;
+        transition: $transitionTime;
+    }
+
+    &__button path{
+        transition: $transitionTime;
+    }
+
+    &__perks {
+        width: 652px;
+    }
+
+    &__perks-heading {
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 29px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+    &__perks-info{
+        padding-top: 21px;
+        padding-bottom: 21px;
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 29px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+    &__perks-ul {
+        list-style: none;
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 29px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+    &__perks-li {
+        display: flex;
+        gap: 21px;
+        align-items: center;
+    }
 }
 
 @media (max-width: 1024px) {
